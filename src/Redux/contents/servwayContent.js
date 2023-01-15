@@ -1,0 +1,12 @@
+export const ADD_SERVWAY = "ADD_SERVWAY";
+
+export const REMOVE_SERVWAY = "REMOVE_SERVWAY";
+
+export const SET_SERVWAY = "SET_SERVWAY";
+
+export const SET_SINGLE_SERVWAY = "SET_SINGLE_SERVWAY";
+
+export const EDIT_SERVWAY = "EDIT_SERVWAY";
+
+
+
