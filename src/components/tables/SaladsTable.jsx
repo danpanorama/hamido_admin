@@ -9,14 +9,13 @@ import Paper from '@mui/material/Paper';
 
 
 
-export default function TableExtra(props) {
+export default function SaladsTable(props) {
   return (
     <TableContainer >
       <Table sx={{ minWidth: 650 }} aria-label="simple table">
         <TableHead>
           <TableRow>
-            <TableCell align="right">שם תוספת</TableCell>
-            <TableCell align="right">מחיר תוספת</TableCell>
+            <TableCell align="right">שם סלט</TableCell>
             <TableCell align="right">מוצג בתפריט</TableCell>
             <TableCell align="right">תמונה</TableCell>
             <TableCell align="right">מחק</TableCell>
@@ -27,16 +26,15 @@ export default function TableExtra(props) {
         <TableBody>
           {props.list.map((row) => (
             <TableRow
-              key={row.ename}
+              key={row.sid}
               sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
             >
               <TableCell align="right" component="th" scope="row">
-                {row.ename}
+                {row.sname}
               </TableCell>
-              <TableCell align="right">{row.eprice}</TableCell>
-              <TableCell align="right">{row.eactive == 1 ? 'כן':'לא'} </TableCell>
+              <TableCell align="right">{row.sactive == 1 ? 'כן':'לא'} </TableCell>
 
-              <TableCell align="right">{row.eimg}</TableCell>
+              <TableCell align="right">{row.simg}</TableCell>
               <TableCell align="right"><button onClick={()=>{props.deleteItem(row)}} >מחק</button></TableCell>
 
             </TableRow>

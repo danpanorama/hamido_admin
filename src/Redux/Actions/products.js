@@ -1,17 +1,19 @@
 import {
-    CLEAR,
     MSG
   } from '../contents/errContent'
 
-import axiosConfig from "../../config/AxiosConfig";
-import { ADD_SERVWAY, REMOVE_SERVWAY, SET_SERVWAY } from '../contents/servwayContent';
+  import {
+    ADD_PRODUCTS, REMOVE_PRODUCTS, SET_PRODUCTS
+  } from '../contents/productsContent'
+  
+  import axiosConfig from "../../config/AxiosConfig";
   
 
 
-  export const setServWay = () => async (dispatch) => {
+  export const setProduct = () => async (dispatch) => {
     try {
       await axiosConfig
-        .get("/sevingway")
+        .get("/products")
         .then((res) => {
           if (res.data.err) {
             return dispatch({
@@ -20,13 +22,9 @@ import { ADD_SERVWAY, REMOVE_SERVWAY, SET_SERVWAY } from '../contents/servwayCon
             })
           } else {
             dispatch({
-              type: SET_SERVWAY,
+              type: SET_PRODUCTS,
               data:res.data.all
             });
-            dispatch({
-              type: MSG,
-              data: res.data.msg
-            })
           
           }
         })
@@ -35,7 +33,7 @@ import { ADD_SERVWAY, REMOVE_SERVWAY, SET_SERVWAY } from '../contents/servwayCon
                 type: MSG,
                 data: {type:'bad',msg:err.message}
               })
-        });
+        })
     } catch (e) {
         dispatch({
             type: MSG,
@@ -47,10 +45,10 @@ import { ADD_SERVWAY, REMOVE_SERVWAY, SET_SERVWAY } from '../contents/servwayCon
   
 
 
-  export const addServway = (data) => async (dispatch) => {
+  export const addProductNow = (data) => async (dispatch) => {
     try {
       await axiosConfig
-        .post("/sevingway/inseretservway",data)
+        .post("/products/inseretitem",data)
         .then((res) => {
           if (res.data.err) {
             return dispatch({
@@ -59,7 +57,7 @@ import { ADD_SERVWAY, REMOVE_SERVWAY, SET_SERVWAY } from '../contents/servwayCon
             })
           } else {
             dispatch({
-              type: ADD_SERVWAY,
+              type: ADD_PRODUCTS,
               data:res.data.data
             });
             dispatch({
@@ -67,13 +65,13 @@ import { ADD_SERVWAY, REMOVE_SERVWAY, SET_SERVWAY } from '../contents/servwayCon
               data: res.data.msg
             })
           }
-        })
+        }) 
         .catch((err) => {
              dispatch({
                 type: MSG,
                 data: {type:'bad',msg:err.message}
               })
-        });
+        })
     } catch (e) {
         dispatch({
             type: MSG,
@@ -84,10 +82,10 @@ import { ADD_SERVWAY, REMOVE_SERVWAY, SET_SERVWAY } from '../contents/servwayCon
 
   
  
-  export const removeServway = (data) => async (dispatch) => {
+  export const removeProduct = (data) => async (dispatch) => {
     try {
       await axiosConfig
-        .post("/sevingway/remove",{id:data})
+        .post("/products/remove",{id:data})
         .then((res) => {
           if (res.data.err) {
             return dispatch({
@@ -96,13 +94,10 @@ import { ADD_SERVWAY, REMOVE_SERVWAY, SET_SERVWAY } from '../contents/servwayCon
             })
           } else {
             dispatch({
-              type: REMOVE_SERVWAY,
+              type: REMOVE_PRODUCTS,
               data:data
             });
-            dispatch({
-              type: MSG,
-              data: res.data.msg
-            })
+          
           }
         })
         .catch((err) => {
@@ -110,7 +105,7 @@ import { ADD_SERVWAY, REMOVE_SERVWAY, SET_SERVWAY } from '../contents/servwayCon
                 type: MSG,
                 data: {type:'bad',msg:err.message}
               })
-        });
+        })
     } catch (e) {
         dispatch({
             type: MSG,

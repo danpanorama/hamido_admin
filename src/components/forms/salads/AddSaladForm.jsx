@@ -12,10 +12,10 @@ function AddSaladForm(props) {
           <input
             type="text"
             label="name"
-            placeholder="name"
+            placeholder="sname"
             className=""
-            name="name"
-            values={props.addSalad.values.name}
+            name="sname"
+            values={props.addSalad.values.sname}
             onChange={props.addSalad.handleChange}
           />
         
@@ -25,10 +25,10 @@ function AddSaladForm(props) {
           <input
             type="text"
             className="inputEmp"
-            values={props.addSalad.values.img}
+            values={props.addSalad.values.simg}
             onChange={props.addSalad.handleChange}
-            name="img"
-            id="img"
+            name="simg"
+            id="simg"
           />
   
           

@@ -18,10 +18,10 @@ function AddSaladComp() {
                 
         const addSalad = useFormik({
             initialValues:{
-            img: '',
-            name:'',
-            price:0,
-            active:0,
+            simg: '',
+            sname:'',
+            sprice:0,
+            sactive:0,
           
         },onSubmit:async values  => {
             try{

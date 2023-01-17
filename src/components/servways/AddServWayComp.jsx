@@ -20,10 +20,10 @@ function AddServWayComp() {
                 
         const addServWay = useFormik({
             initialValues:{
-            img: '',
-            name:'',
-            price:0,
-            active:0,
+            serimg: '',
+           sername:'',
+            serprice:0,
+            seractive:0,
           
         },onSubmit:async values  => {
             try{

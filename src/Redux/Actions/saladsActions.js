@@ -62,7 +62,7 @@ import {
           } else {
             dispatch({
               type: ADD_SALAD,
-              data:res.data.all
+              data:res.data.data
             });
             dispatch({
               type: MSG,
@@ -87,7 +87,7 @@ import {
 
   
  
-  export const removeExtra = (data) => async (dispatch) => {
+  export const removeSalad = (data) => async (dispatch) => {
     try {
       await axiosConfig
         .post("/salads/remove",{id:data})

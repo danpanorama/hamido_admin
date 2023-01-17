@@ -9,13 +9,14 @@ function Navbar(props) {
   const admin =  useSelector((state)=>state.admin);
 
   return (
-    <div className=" ">
+    <div className="flexcol ">
 <NavLink to={{pathname:'/'}} >בית</NavLink>
 <NavLink to={{pathname:'/salads'}} >סלטים</NavLink>
 <NavLink to={{pathname:'/extra'}} >אקסטרות</NavLink>
 <NavLink to={{pathname:'/serv'}} >דרכי הגשה</NavLink>
 <NavLink to={{pathname:'/menu'}} >מנות</NavLink>
 
+<NavLink to={{pathname:'/products'}} >מוצרים</NavLink>
 
 
     </div>

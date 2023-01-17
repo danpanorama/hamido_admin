@@ -5,13 +5,15 @@ import extraReducer from './reducers/extraReducer'
 import ErrorReducer from './reducers/errReducer'
 import SaladsReducer from './reducers/saladsReducer'
 import servwayReducer from './reducers/servwayReducer'
+import productReducer from './reducers/productReducer'
 
 
 const reducer = combineReducers({
     err:ErrorReducer,
     extras:extraReducer,
     salads:SaladsReducer,
-    servway:servwayReducer
+    servway:servwayReducer,
+    products:productReducer
    
 })
 

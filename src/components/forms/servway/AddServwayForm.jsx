@@ -14,18 +14,18 @@ function AddServwayForm(props) {
             label="name"
             placeholder="name"
             className=""
-            name="name"
-            values={props.addServWay.values.name}
+            name="sername"
+            values={props.addServWay.values.sername}
             onChange={props.addServWay.handleChange}
           />
           <label htmlFor="cat"> מחיר:</label>
           <input
             type="number"
             label="description"
-            placeholder="ptice"
+            placeholder="serptice"
             className="inputEmp"
-            name="price"
-            values={props.addServWay.values.price}
+            name="serprice"
+            values={props.addServWay.values.serprice}
             
             onChange={props.addServWay.handleChange}
           />
@@ -35,10 +35,10 @@ function AddServwayForm(props) {
           <input
             type="text"
             className="inputEmp"
-            values={props.addServWay.values.img}
+            values={props.addServWay.values.serimg}
             onChange={props.addServWay.handleChange}
-            name="img"
-            id="img"
+            name="serimg"
+            id="serimg"
           />
   
           

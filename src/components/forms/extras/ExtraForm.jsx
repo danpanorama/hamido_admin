@@ -14,8 +14,8 @@ function ExtraForm(props) {
             label="name"
             placeholder="name"
             className=""
-            name="name"
-            values={props.addExtra.values.name}
+            name="ename"
+            values={props.addExtra.values.ename}
             onChange={props.addExtra.handleChange}
           />
           <label htmlFor="cat"> מחיר:</label>
@@ -24,8 +24,8 @@ function ExtraForm(props) {
             label="description"
             placeholder="ptice"
             className="inputEmp"
-            name="price"
-            values={props.addExtra.values.price}
+            name="eprice"
+            values={props.addExtra.values.eprice}
             
             onChange={props.addExtra.handleChange}
           />
@@ -35,10 +35,10 @@ function ExtraForm(props) {
           <input
             type="text"
             className="inputEmp"
-            values={props.addExtra.values.img}
+            values={props.addExtra.values.eimg}
             onChange={props.addExtra.handleChange}
-            name="img"
-            id="img"
+            name="eimg"
+            id="eimg"
           />
   
           

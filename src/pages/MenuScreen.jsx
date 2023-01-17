@@ -1,9 +1,10 @@
 import '../App.css';
+import AddMenuItem from '../components/menu/AddMenuItem';
 
 function MenuScreen() {
   return (
     <div className="">
-   <h1>menue</h1>
+<AddMenuItem/>
     </div>
   );
 }

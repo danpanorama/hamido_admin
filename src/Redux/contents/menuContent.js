@@ -1,0 +1,12 @@
+export const ADD_MENU_ITEM = "ADD_MENU_ITEM";
+
+export const REMOVE_MENU_ITEM = "REMOVE_MENU_ITEM";
+
+export const SET_MENU_ITEM = "SET_MENU_ITEM";
+
+export const SET_SINGLE_MENU_ITEM = "SET_SINGLE_MENU_ITEM";
+
+export const EDIT_MENU_ITEM = "EDIT_MENU_ITEM";
+
+
+

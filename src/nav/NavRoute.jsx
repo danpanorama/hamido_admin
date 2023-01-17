@@ -12,6 +12,7 @@ import SaladsScreen from "../pages/SaladsScreen";
 import ServWayScreen from "../pages/ServWayScreen";
 
 import MenuScreen from "../pages/MenuScreen";
+import ProductScreen from "../pages/ProductScreen";
 
 
 
@@ -30,6 +31,7 @@ function NavRoute() {
 <Route path="/serv" element={<ServWayScreen/>} exact/>
 <Route path="/menu" element={<MenuScreen/>} exact/>
 
+<Route path="/products" element={<ProductScreen/>} exact/>
 
 
 {/* <Route path="/productlist" element={ <PrivateRoute />} exact> 

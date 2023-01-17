@@ -58,7 +58,7 @@ import {
           } else {
             dispatch({
               type: ADD_EXTRA,
-              data:res.data.all
+              data:res.data.data
             });
           
           }

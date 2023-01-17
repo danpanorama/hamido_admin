@@ -12,11 +12,13 @@ function App() {
         <NavRoute/>
       </div>
 
-      {errState.active_message?
-      <div className="errMessage">
+   <div className="positionErrormessage">
+   {errState.active_message?
+      <div className={"errMessage " + errState.type}>
         <p className="message">{errState.msg}</p>
       </div>
       :''}
+   </div>
     </div>
   );
 }
