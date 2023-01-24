@@ -14,11 +14,11 @@ function MenuForm(props) {
           <select
             name="servway"
             values={props.addMenuItemFormik.values.servway}
-            onChange={props.addMenuItemFormik.handleChange}
+            onInput={props.addMenuItemFormik.handleChange}
             id=""
           >
             {props.servway.map((e) => {
-              return <option value={JSON.stringify({name:e.sername,id:e.serid})}>{e.sername}</option>;
+              return <option key={e.serid} value={JSON.stringify({name:e.sername,id:e.serid})}>{e.sername}</option>;
             })}
           </select>
         </div>
@@ -29,11 +29,11 @@ function MenuForm(props) {
           <select
             name="mname"
             values={props.addMenuItemFormik.values.mname}
-            onChange={props.addMenuItemFormik.handleChange}
+            onInput={props.addMenuItemFormik.handleChange}
             id="mname"
           >
             {props.products.map((e) => {
-              return <option value={JSON.stringify({name:e.pname,id:e.pid})}>{e.pname}</option>;
+              return <option key={e.pid} value={JSON.stringify({name:e.pname,id:e.pid})}>{e.pname}</option>;
             })}
           </select>
         </div>
@@ -55,9 +55,9 @@ function MenuForm(props) {
       <label htmlFor="">כמות סלטים</label>
       <input
         type="number"
-        name="sumsalads"
-        id="sumsalads"
-        values={props.addMenuItemFormik.values.sumsalads}
+        name="sumextra"
+        id="sumextra"
+        values={props.addMenuItemFormik.values.sumextra}
         onChange={props.addMenuItemFormik.handleChange}
       />
 

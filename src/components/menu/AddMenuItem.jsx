@@ -37,7 +37,7 @@ getDataFromServer()
             initialValues:{
             mimg: '',
             mname:'',
-            sumsalads:0,
+            sumextra:0,
             mprice:0,
             servway:'',
             mactive:0,

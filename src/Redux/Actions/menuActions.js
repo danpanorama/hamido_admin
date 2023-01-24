@@ -21,7 +21,7 @@ import {
 
 
 
-  export const setProduct = () => async (dispatch) => {
+  export const setMenuItems = () => async (dispatch) => {
     try {
       await axiosConfig
         .get("/menu")
@@ -96,7 +96,7 @@ import {
   export const removeMenuItem = (data) => async (dispatch) => {
     try {
       await axiosConfig
-        .post("/products/remove",{id:data})
+        .post("/menu/remove",{id:data})
         .then((res) => {
           if (res.data.err) {
             return dispatch({
@@ -108,7 +108,10 @@ import {
               type: REMOVE_MENU_ITEM,
               data:data
             });
-          
+            return dispatch({
+              type: MSG,
+              data: res.data.msg
+            })
           }
         })
         .catch((err) => {
