@@ -1,0 +1,27 @@
+.ordersWindow{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 7fr 1fr;
+    gap: 20px;
+    
+    
+}
+.order{
+    box-shadow: 1px 3px 20px black;
+    
+}
+.leftSideOrders{
+    border: 1px solid black;
+    background-color: antiquewhite;
+}
+
+
+  .ordersWindow{
+   
+   
+    
+  }
+  .orderinfo{
+    padding: 10px;
+  }

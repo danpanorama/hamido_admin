@@ -7,7 +7,7 @@ import SaladsReducer from './reducers/saladsReducer'
 import servwayReducer from './reducers/servwayReducer'
 import productReducer from './reducers/productReducer'
 import menuReducer from './reducers/menuReducer'
-
+import ordersReducer from './reducers/ordersReducer'
 
 const reducer = combineReducers({
     err:ErrorReducer,
@@ -15,7 +15,8 @@ const reducer = combineReducers({
     salads:SaladsReducer,
     servway:servwayReducer,
     products:productReducer,
-    menu:menuReducer
+    menu:menuReducer,
+    orders:ordersReducer
    
 })
 

@@ -9,8 +9,9 @@ function Navbar(props) {
   const admin =  useSelector((state)=>state.admin);
 
   return (
-    <div className="flexcol ">
-<NavLink to={{pathname:'/'}} >בית</NavLink>
+    <div className="flexcol center navbar nav">
+<div className="flexcol center">
+<NavLink  to={{pathname:'/'}} >בית</NavLink>
 <NavLink to={{pathname:'/salads'}} >סלטים</NavLink>
 <NavLink to={{pathname:'/extra'}} >אקסטרות</NavLink>
 <NavLink to={{pathname:'/serv'}} >דרכי הגשה</NavLink>
@@ -18,6 +19,7 @@ function Navbar(props) {
 
 <NavLink to={{pathname:'/products'}} >מוצרים</NavLink>
 
+</div>
 
     </div>
   );

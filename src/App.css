@@ -47,3 +47,28 @@ form{
 .bad{
   background-color: rgba(255, 0, 0, 0.429);
 }
+.w20{
+  width: 30%;
+}
+.space{
+  width: 30%;
+}
+.paddingPage{
+  padding: 20px;
+ 
+}
+.bcgreen{
+  background-color: green;
+}
+.bcyellow{
+  background-color: yellow;
+}
+.bcpurple{
+  background-color: purple;
+
+}
+
+
+.end{
+  align-items: flex-end;
+}

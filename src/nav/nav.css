@@ -1,0 +1,10 @@
+.navbar{
+    border: 1px solid black;
+}
+.nav{
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 20%;
+}

@@ -1,0 +1,11 @@
+export const USERSORDERS = "USERSORDERS";
+
+
+export const NEWORDERS = "NEWORDERS";
+export const REMOVEORDER = "REMOVEORDER";
+export const ACCEPTORDER = "ACCEPTORDER";
+
+export const ORDERISREADY = "ORDERISREADY";
+
+
+
